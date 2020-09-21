@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+.idea
+*.iml
+.trash/
+.vscode
+tingyun-agent.*
+*.log
+config/config.dev.js
+.arcconfig
+.history
+.arcconfig
+.stylelintcache
+coverage/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>调度历史地图</title>
+    <script
+      type="text/javascript"
+      src="https://webapi.amap.com/maps?v=1.4.15&key=4287645405b708067719678082cc4d38&plugin=Map3D,AMap.Driving,AMap.Walking,AMap.GltfLoader,AMap.Heatmap"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+    <!-- <script
+      type="text/javascript"
+      src="https://webapi.amap.com/maps?v=1.4.15&key=4287645405b708067719678082cc4d38&plugin=AMap.Driving,AMap.Riding"
+    ></script> -->
+    <!-- UI组件库 1.0 -->
+    <!-- <script src="https://webapi.amap.com/ui/1.0/main.js"></script> -->
+  </head>
+  <body>
+    <div id="map">
+      <div class="map-info">
+        <h4>获取地图级别与中心点坐标</h4>
+        <p>当前级别：<span id="map-zoom"></span></p>
+        <p>当前点击的经纬度：<span id="map-center"></span></p>
+        <p>当前仰角:<span id="map-pitch"></span></p>
+      </div>
+    </div>
+    <div class="startup-mask">
+      <div class="container">
+        <div class="startup-btn">
+          <span>点击开始</span>
+          <div class="dot"></div>
+        </div>
+        <div class="no-startup-btn">
+          <span>点击开始(无开场)</span>
+          <div class="dot"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

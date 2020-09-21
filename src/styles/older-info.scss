@@ -1,0 +1,94 @@
+.community-older-info {
+  width: 360px;
+  height: 190px;
+  z-index: 1000;
+  background: url('../../public/image/older-info/older-bg.png') no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  padding: 0 32px 19px 32px;
+  position: relative;
+  transform: scaleY(0);
+  opacity: 0;
+  animation: scaleExpand 1s ease-in-out 0.1s 1 normal forwards;
+  .title {
+    position: relative;
+    left: 17px;
+    top: 4px;
+  }
+  .personal-info-wrapper {
+    position: relative;
+    top: 30px;
+    display: flex;
+    .avatar-wrapper {
+      width: 80px;
+      height: 88px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('../../public/image/older-info/avatar-bg.png') no-repeat;
+      background-size: cover;
+      background-position: center;
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+    ul {
+      margin-left: 20px;
+      li {
+        margin-top: 5px;
+        color: white;
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        .block-dot {
+          width: 8px;
+          height: 8px;
+          background: rgba(216, 216, 216, 1);
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  .service-wrapper {
+    position: absolute;
+    top: 18px;
+    right: 28px;
+    font-size: 12px;
+    color: white;
+    .service-item {
+      margin-bottom: 5px;
+      div {
+        height: 15px;
+        padding-left: 3px;
+        line-height: 15px;
+        width: 90px;
+        border-left: 2px solid #d8d8d8;
+      }
+      p {
+        margin-top: 5px;
+        padding-left: 5px;
+      }
+    }
+  }
+  .bottom-decorate {
+    position: absolute;
+    bottom: 9px;
+    left: 32px;
+    height: 18px;
+    width: 274px;
+    background: url('../../public/image/older-info/info-bottom.png') no-repeat;
+    background-size: contain;
+  }
+}
+@keyframes scaleExpand {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
